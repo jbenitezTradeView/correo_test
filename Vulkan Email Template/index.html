@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/63fb742361.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+      .container{/*OK*/
+          background-color: #fff;
+          width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+          font-family: 'Noto Sans', 'sans-serif', 'serif';
+      }
+      .navbar{/*OK*/
+          position: relative;
+          top: 0;
+          left: 0;
+          width: 700px;
+          font-family: 'Noto Sans', 'sans-serif', 'serif';
+      }
+      .logo-vulkan{
+          position: absolute;
+          top: 20px;
+          left: 35px;
+          width: 60px;
+      }
+      .logo-vulkan-title{
+        position: relative;
+          top: 0px;
+          left: 230px;
+          width: 250px;
+          margin-bottom: -15px;
+      }
+      .logo-tradeview{
+          top: 10px;
+          right: 30px;
+          width: 250px;
+      }
+      .container-head{
+          background-color: #F2F2F2;
+          height: 80px;
+      }
+      .container-body{
+          background-color: #fff;
+          height: 650px;
+          border: 1px solid #F2F2F2;
+      }
+      .head-title{/*OK*/
+        position: static;
+        margin-top: -5px;
+        padding-top: 5px;
+      }
+      .greeting-message{/*OK*/
+          margin-top: 60px;
+          margin-bottom: 20px;
+          width: 200px;
+          font-size: 14pt;
+          font-style: italic;
+          color: #303030;
+      }
+      .container-alert-message{
+          margin-left: 15%;
+          margin-right: 15%;
+          color: #303030;
+          font-size: 14pt;
+          font-style: italic;
+          margin-bottom: 30px;
+      }
+      .table-module {/*OK*/
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 70%;
+      }
+      .table-module td, .table-module th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      .table-module tr:nth-child(even){background-color: #f2f2f2;}
+      .table-module tr:hover {background-color: #ddd;}
+      .table-module th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #11144B;
+        color: white;
+      }
+      hr{
+          width: 200px;
+          border: 1px solid #F2F2F2;
+          border-radius: 1px;
+          box-shadow: 1px 1px 1px rgb(214, 213, 213);
+          margin-top: 20px;;
+          margin-bottom: 30px;
+      }
+      .container-principal-message{
+          margin-left: 70px;
+          margin-right: 70px;
+          color: #666666;
+          font-size: 12pt;
+          margin-bottom: 50px;
+      }
+      .container-footer{
+          background-color: #3C3E48;
+          height: 280px;
+          border: 1px solid #F2F2F2;
+      }
+      .container-footer-message{
+          margin-left: 30px;
+          margin-right: 30px;
+          color: #9b9b9b;
+          font-size: 9pt;
+          margin-top: 30px;
+          margin-bottom: 0px;
+      }
+      .hr-footer{
+          border: 1px solid #3b3b3b;
+          border-radius: 1px;
+          box-shadow: 1px 1px 1px rgb(122, 122, 122);
+      }
+    </style>
+  </head>
+
+  <body class="container">
+    <div class="navbar">
+        <img width="700px" height="100px" src="images/NavBar.png"></img>
+        <img class="logo-vulkan" src="images/logo-vulkan-dark-square.svg"></img>
+    </div>
+         
+    <div class="container-head">
+        <div class="head-title">
+            <img class="logo-vulkan-title" src="images/logo-vulkan-light.svg"></img>
+            <center><h2>REPORT RESUME</h2></center>
+        </div>
+    </div>
+    <div class="container-body">
+        <center>
+            <div class="greeting-message">
+                <p>Hi {{TV-USER}},</p>
+            </div>
+            <div class="container-alert-message">
+                <p>We have generated a new report for you. You can review the information below:</p>
+            </div>
+            <table class="table-module">
+                <tr>
+                    <th>Description</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Total Trades</td>
+                    <td><center>{{TV-VALUE-1}}</center></td>
+                </tr>
+                <tr>
+                    <td>Total B-Book Trades</td>
+                    <td><center>{{TV-VALUE-2}}</center></td>
+                </tr>
+                <tr>
+                    <td>Total A-Book Trades</td>
+                    <td><center>{{TV-VALUE-3}}</center></td>
+                </tr>
+                <tr>
+                    <td>Total Partial STP Trades</td>
+                    <td><center>{{TV-VALUE-4}}</center></td>
+                </tr>
+                <tr>
+                    <td>Total Volume (MT Format)</td>
+                    <td><center>{{TV-VALUE-5}}</center></td>
+                </tr>
+                <tr>
+                    <td>Total B-Book PnL</td>
+                    <td><center>{{TV-VALUE-6}}</center></td>
+                </tr>
+                <tr>
+                    <td>Total A-Book PnL</td>
+                    <td><center>{{TV-VALUE-7}}</center></td>
+                </tr>
+                <tr>
+                    <td>Total Partial STP PnL</td>
+                    <td><center>{{TV-VALUE-8}}</center></td>
+                </tr>
+            </table>      
+            <hr>
+            <div class="container-principal-message">
+                <p>We will be informing you about any news, Best Regards.</p>
+                <!-- <div><strong>Vulkan Prime Bridge</strong></div> -->
+            </div>
+        </center>
+    </div>
+    <div class="container-footer">
+        <center>
+            <div class="container-footer-message">
+                <p><strong>Vulkan Prime Bridge</strong> | 
+                    <strong>Developed by Tradeview Ltd</strong></p>
+            </div>
+            <hr class="hr-footer">
+            <div class="container-footer-message">
+                <p>This message is intended for the individual or entity to which it is addressed and may contain information that is privileged, confidential or exempt from disclosure under applicable law. If the reader of this message is not the intended recipient, any dissemination, distribution or copying of this communication is strictly prohibited. If you have received this communication in error please delete it.</p>
+            </div>
+            <img class="logo-tradeview" src="images/tradeview-logo.svg"></img>
+        </center>
+    </div>
+   
+
+</body>
+</html>
